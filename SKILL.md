@@ -39,3 +39,7 @@ This Skill implements the **SMART POLE** framework for prompt engineering. It ac
 - **Category (T)**: Is this for a week or a lifetime?
 
 Here are some **SP-atoms** to add..."
+
+## Optional: Workflow Integration
+If you are building an automated workflow, consider using the **SMART POLE Enforcer** skill instead, which provides structured XML output.
+
