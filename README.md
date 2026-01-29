@@ -1,2 +1,112 @@
-# smart-pole-skill
-Use SMART POLE prompt engineering to enrichment your LLM Prompt
+# SMART POLE Skill: The Ultimate Context Engine
+**Bi-lingual Documentation (English / Tiếng Việt)**
+
+From generic "average" answers to "surgical precision" results.
+*Từ những câu trả lời "trung bình" lột xác thành kết quả "chính xác tuyệt đối".*
+
+---
+
+## 🌟 Introduction / Giới Thiệu
+**English**:
+The **SMART POLE** framework is a systematic approach to Prompt Engineering designed to eliminate "Hallucinations" and "Generic Blob" responses. By breaking down a request into 9 distinct atoms of context, it forces Large Language Models (LLMs) to lock into a specific probability path, ensuring the output matches exactly what you envisioned.
+
+**Tiếng Việt**:
+Framework **SMART POLE** là phương pháp tiếp cận có hệ thống đối với Prompt Engineering, được thiết kế để loại bỏ hiện tượng "ảo giác" (hallucinations) và các câu trả lời chung chung vô hồn. Bằng cách chia nhỏ yêu cầu của bạn thành 9 "nguyên tử" (atoms) ngữ cảnh riêng biệt, nó buộc các mô hình ngôn ngữ lớn (LLM) phải đi theo đúng hướng, đảm bảo kết quả đầu ra khớp hoàn toàn với mong muốn của bạn.
+
+---
+
+## 🧩 The 9 Categories / 9 Yếu Tố Cốt Lõi
+To master this framework, you need to understand the acronym **SMART POLE**:
+*Để làm chủ framework này, bạn cần hiểu rõ 9 chữ cái trong **SMART POLE**:*
+
+| Letter | Category | Meaning (Ý nghĩa) | Example Atom (Ví dụ) |
+| :---: | :--- | :--- | :--- |
+| **S** | **Style** | The Persona/Mask of the AI. <br> *Lớp vỏ/Persona của AI.* | "Witty Instructor", "Concise JSON" |
+| **M** | **Mastery** | The **User's** level of understanding. <br> *Trình độ hiểu biết của **Người dùng**.* | "Explain like I'm 5", "Senior Architect" |
+| **A** | **Aim** | The Goal & Scorecard. <br> *Mục tiêu & Tiêu chí đánh giá.* | "Debug usage memory" + "Explain root cause" |
+| **R** | **Resource** | Tools, Budget, Data. <br> *Công cụ, Ngân sách, Dữ liệu.* | "Use PostgreSQL", "Budget $0" |
+| **T** | **Time** | Deadlines, Duration. <br> *Hạn chót, Thời lượng.* | "Deadline: Friday", "read in 2 mins" |
+| **P** | **People** | Values, Audience, Beliefs. <br> *Giá trị, Khán giả, Niềm tin* | "Value efficiency over cost", "Audience: Moms" |
+| **O** | **Outline** | Structure & Scope. <br> *Cấu trúc & Phạm vi.* | "3 Sections", "Ignore backend code" |
+| **L** | **Locale** | Domain, Industry, Context. <br> *Lĩnh vực, Ngành nghề, Ngữ cảnh.* | "SaaS Industry", "GDPR Compliant" |
+| **E** | **Example** | Snippets to emulate. <br> *Đoạn mẫu (Snippet).* | "Use this JSON schema: {...}" |
+
+---
+
+## 🛠️ The Origin / Nguồn Gốc Xây Dựng
+**English**:
+This Skill was created through a rigourus **Reverse Engineering** process of the famous `SMART_POLE_helper` bot on Poe.
+- **Methodology**: Black-box analysis, Chain of Thought (CoT) extraction, and A/B benchmarking.
+- **Accuracy**: >95% replication of the original bot's logic, including its internal "Think-Tag-Analyze" loop.
+- **Optimization**: We enhanced the framework by strictly separating "Mastery" (User level) from "Style" (AI Persona), a nuance often overlooked.
+
+**Tiếng Việt**:
+Skill này được xây dựng thông qua quy trình **Reverse Engineering** (Dịch ngược) nghiêm ngặt từ con bot nổi tiếng `SMART_POLE_helper` trên Poe.
+- **Phương pháp**: Phân tích hộp đen, trích xuất chuỗi suy luận (Chain of Thought), và benchmark A/B.
+- **Độ chính xác**: Tái tạo >95% logic của bot gốc, bao gồm cả vòng lặp "Suy nghĩ - Gắn thẻ - Phân tích" bên trong.
+- **Tối ưu hóa**: Chúng tôi đã nâng cấp framework bằng cách tách biệt rõ ràng giữa "Mastery" (Trình độ người dùng) và "Style" (Persona của AI), một chi tiết tinh tế thường bị bỏ qua.
+
+---
+
+## 🚀 How to Use / Hướng Dẫn Sử Dụng
+This project provides two modes of operation. Choose the one that fits your workflow.
+*Dự án cung cấp 2 chế độ hoạt động. Hãy chọn chế độ phù hợp với workflow của bạn.*
+
+### 1. Standard Mode (Conversational) / Chế độ Tiêu chuẩn (Hội thoại)
+- **File**: `SKILL.md`
+- **Focus**: Education & Guidance.
+- **Best for**: Beginners who want to learn prompt engineering or manually refine a prompt.
+- **Usage**: Load the skill and chat naturally. The AI will act as a teacher.
+- *Phù hợp cho*: Người mới bắt đầu muốn học cách viết prompt hoặc tinh chỉnh thủ công. AI sẽ đóng vai giáo viên hướng dẫn.*
+
+### 2. Enforcer Mode (Workflow) / Chế độ Cưỡng chế (Quy trình)
+- **File**: `SKILL_ENFORCER.md`
+- **Focus**: Automation & Strictness.
+- **Best for**: Agentic Workflows, Coding pipelines, or "Gatekeeper" steps.
+- **Usage**: The AI will **NOT** output the result until it detects a perfect prompt. It ends with a machine-readable XML block:
+    ```xml
+    <master_prompt> ... </master_prompt>
+    ```
+- *Phù hợp cho*: Các quy trình tự động hóa (Agentic Workflow). AI sẽ **KHÔNG** nhả kết quả cho đến khi prompt hoàn hảo. Nó sẽ kết thúc bằng một block XML để máy có thể đọc.*
+
+---
+
+## 💻 For Developers: "VIBE Coding"
+**English**:
+Use the Enforcer Mode as a "Gatekeeper" before your coding agent.
+*Example Workflow*:
+1. **Input**: "Write a python script for DB." (Vague!)
+2. **SMART POLE**: "I need more info. Which DB? (Resource), What complexity? (Mastery), Speed or readable? (People/Values)."
+3. **User**: "Postgres, Senior level, Speed."
+4. **SMART POLE**: Outputs `<master_prompt> ... </master_prompt>`.
+5. **Coding Agent**: Takes the `<master_prompt>` and writes flawless code because the context is complete.
+
+**Tiếng Việt**:
+Sử dụng Enforcer Mode như một "Người gác cổng" trước khi chuyển cho AI viết code.
+*Ví dụ Workflow*:
+1. **Input**: "Viết script python cho DB." (Quá sơ sài!)
+2. **SMART POLE**: "Tôi cần thêm thông tin. DB nào? (Resource), Trình độ nào? (Mastery), Ưu tiên tốc độ hay dễ đọc? (People)."
+3. **User**: "Postgres, trình độ Senior, ưu tiên Tốc độ."
+4. **SMART POLE**: Xuất ra `<master_prompt> ... </master_prompt>`.
+5. **Coder Agent**: Nhận `<master_prompt>` và viết code hoàn hảo vì ngữ cảnh đã đầy đủ.
+
+---
+
+## 📚 Documentation / Tài Liệu
+- [Logic Breakdown (Chi tiết Logic)](docs/logic.md)
+- [System Prompt (Conversational)](prompts/system_prompt.md)
+- [System Prompt (Enforcer)](prompts/system_prompt_enforcer.md)
+
+---
+
+## ❤️ Special Thanks & Appreciation / Lời Tri Ân
+
+**English**:
+This project is built upon the **SMART POLE** framework, a product of the vision and dedication of **Mr. Nam Vihelm (Nguyễn Đình Nam)**. Nam Vihelm is a renowned Vietnamese inventor (founder of VP9 and Vihelm), recognized globally for his innovation during the COVID-19 pandemic. We express our deepest gratitude to him for sharing this systematic framework with the global Prompt Engineering community, enabling us to move from "prompting by feeling" to "Scientific Prompt Engineering."
+
+**Tiếng Việt**:
+Dự án này được xây dựng dựa trên framework **SMART POLE**, thành quả từ tầm nhìn và sự cống hiến của anh **Nguyễn Đình Nam (Nam Vihelm)**. Anh Nam Vihelm là một nhà sáng chế nổi tiếng người Việt (người sáng lập VP9 và Vihelm), được biết đến trên toàn cầu với các phát minh đột phá. Chúng tôi xin gửi lời tri ân sâu sắc nhất tới anh vì đã chia sẻ hệ thống tư duy bài bản này tới cộng đồng Prompt Engineering, giúp chúng ta chuyển từ việc "prompt theo cảm tính" sang "Kỹ nghệ Prompt Khoa học".
+
+> [!NOTE]
+> Connect with the author: [Nam Vihelm on Facebook](https://www.facebook.com/nam.vihelm)
+
