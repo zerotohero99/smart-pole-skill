@@ -88,6 +88,21 @@ This project provides two modes of operation. Choose the one that fits your work
     ```
 - *Phù hợp cho*: Các quy trình tự động hóa (Agentic Workflow). AI sẽ **KHÔNG** nhả kết quả cho đến khi prompt hoàn hảo. Nó sẽ kết thúc bằng một block XML để máy có thể đọc.*
 
+### ✨ Enforcer v2.0 Enhancements (New!)
+The Enforcer mode has been upgraded with the following features:
+
+| Feature | Description |
+|---|---|
+| **Weighted Readiness Score** | A dynamic scoring system (10.5-11.0 points) with category weights. Core categories (A, O) = 2.0 points each. **Locale becomes Core (2.0) for domain-sensitive requests** (legal, finance, healthcare). |
+| **Iterative Loop** | The AI is **forbidden** from generating a Master Prompt in its first response. It MUST ask clarifying questions first. |
+| **Question Protocol** | All questions are numbered and the user is explicitly asked to answer them before proceeding. No more "assumed" atoms. |
+| **Overlap Handling** | Built-in rules for handling ambiguous information: Functional Gravity Principle + One Atom One Slot. See [Overlap Rules](docs/overlap-rules.md). |
+| **Domain Detection** | Automatic detection of domain-sensitive requests. Warning displayed if Locale is missing for legal/finance/healthcare contexts. |
+| **Security Guardrails** | Built-in defenses against **Prompt Injection** and **Prompt Poisoning** attacks. The AI will detect and reject malicious patterns. |
+
+> [!TIP]
+> This ensures a thorough brainstorming session between you and the AI, leading to a higher quality Master Prompt.
+
 ---
 
 ## 💻 For Developers: "VIBE Coding"
@@ -113,6 +128,9 @@ Sử dụng Enforcer Mode như một "Người gác cổng" trước khi chuyể
 
 ## 📚 Documentation / Tài Liệu
 - [Logic Breakdown (Chi tiết Logic)](docs/logic.md)
+- [SP Sub-categories Reference (Chi tiết Sub-categories)](docs/sub-categories.md)
+- [Overlap Handling Rules (Quy tắc Xử lý Chồng lấn)](docs/overlap-rules.md)
+- [Gemini Gem Update Guide (Hướng dẫn Gemini)](docs/gemini-gem-guide.md) **NEW**
 - [System Prompt (Conversational)](prompts/system_prompt.md)
 - [System Prompt (Enforcer)](prompts/system_prompt_enforcer.md)
 
