@@ -135,3 +135,23 @@ These two categories are often confused. Here's the clear distinction:
 | **Metaphor** | The **hard frame** | The **destination** |
 
 *Example*: "Email under 100 words" = Outline. "Email must make boss feel reassured" = Aim.
+
+## Enforcer Cheat Sheet (Quick Reference)
+
+When facing different query types, prioritize these SP-categories:
+
+| Query Problem | Primary Tools | Action |
+|---------------|---------------|--------|
+| **Vague/Formless** | **A + O** | Build the frame first. Aim = destination, Outline = skeleton. |
+| **Misaligned/Wrong tone** | **P + S** | Adjust behavior. People = values, Style = persona. |
+| **Unrealistic/Fantasy** | **R + L** | Ground AI to reality. Resource = constraints, Locale = context. |
+| **Conflicting Example** | **A → E** | Use Aim as gravity to filter/transform toxic Examples. |
+
+## Example (E) Poisoning Warning
+
+> A good Example is worth a thousand descriptions, but a **bad Example is poison** if not filtered through SMART POLE.
+
+**Tactical Response to Toxic Examples**:
+1. **Detect**: Identify if Example contradicts Aim or People values.
+2. **Transform**: Convert toxic Example into an **Anti-Example** (what to avoid).
+3. **Relocate**: Move the constraint into **Resource (R)** as a "Forbidden" atom.
