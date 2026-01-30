@@ -69,13 +69,25 @@ A prompt is not a block of text; it is a collection of **Atoms**.
 ## The SP-Flaw Principle
 A flaw is an "empty bucket". If you don't fill the "Resource" bucket, the AI will reach into its general training data and grab a random resource. This leads to hallucinations or generic advice.
 
-## Weighted Readiness Scoring (v2.0)
+## Weighted Readiness Scoring (v3.0)
 To scientifically measure prompt quality, we assign weights to categories based on their impact:
 
 | Category | Weight | Role |
 |---|---|---|
 | **Aim / Outline** | **2.0** | **CORE**: Without these, the request is structureless. |
-| **Locale / People / Mastery / Resource** | **1.5 / 1.0** | **CONTEXTUALIZER**: Defines the constraints and flavor. |
+| **Locale** | **CONDITIONAL** | **CORE (2.0)** for Advisory/Discovery, **1.5** for Generative, **0.5** for Deterministic |
+| **People / Mastery / Resource** | **1.5 / 1.0** | **CONTEXTUALIZER**: Defines the constraints and flavor. |
 | **Time / Style / Example** | **0.5** | **ACCELERATOR**: Enhances quality but not mandatory for logic. |
 
-**Threshold**: A prompt is considered "Master/Gemini-Ready" only when it achieves a score of **≥ 7.0/10.5**.
+### Task-Type Classification
+The system automatically classifies requests into 5 types:
+
+| Task Type | Keywords | Locale Requirement |
+|-----------|----------|-------------------|
+| **Deterministic** | solve, calculate, algorithm, parse | Optional (0.5) |
+| **Generative** | write, create, design, build | Contextualizer (1.5) |
+| **Advisory** | advise, recommend, should I, strategy | 🔴 **CORE (2.0)** |
+| **Discovery** | brainstorm, explore, ideas, research | 🔴 **CORE (2.0)** |
+| **Compliance** | legal, policy, GDPR, regulation | 🔴 **CORE (2.0)** |
+
+**Threshold**: A prompt is considered "Master/Gemini-Ready" only when it achieves a score of **≥ 67%** AND all required Core categories are confirmed.

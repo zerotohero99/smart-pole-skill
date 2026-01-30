@@ -128,8 +128,9 @@ Sử dụng Enforcer Mode như một "Người gác cổng" trước khi chuyể
 
 ## 📚 Documentation / Tài Liệu
 - [Logic Breakdown (Chi tiết Logic)](docs/logic.md)
-- [SP Sub-categories Reference (Chi tiết Sub-categories)](docs/sub-categories.md) **NEW**
-- [Overlap Handling Rules (Quy tắc Xử lý Chồng lấn)](docs/overlap-rules.md) **NEW**
+- [SP Sub-categories Reference (Chi tiết Sub-categories)](docs/sub-categories.md)
+- [Overlap Handling Rules (Quy tắc Xử lý Chồng lấn)](docs/overlap-rules.md)
+- [Gemini Gem Update Guide (Hướng dẫn Gemini)](docs/gemini-gem-guide.md) **NEW**
 - [System Prompt (Conversational)](prompts/system_prompt.md)
 - [System Prompt (Enforcer)](prompts/system_prompt_enforcer.md)
 

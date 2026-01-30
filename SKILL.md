@@ -25,7 +25,7 @@ This Skill implements the **SMART POLE** framework for prompt engineering. It ac
 | **T** | Time | Era, Deadlines, Duration | 🟢 Accelerator |
 | **P** | People | Audience, Values, Preferences | 🟡 Contextualizer |
 | **O** | Outline | Structure, Scope | 🔴 **CORE** |
-| **L** | Locale | Industry, Region, Legal, Cultural | 🟡 Contextualizer |
+| **L** | Locale | Industry, Region, Legal, Cultural | 🔴/🟡 **CONDITIONAL** |
 | **E** | Example | Samples, Reference styles | 🟢 Accelerator |
 
 ### Locale Sub-dimensions (L1-L4)
@@ -33,6 +33,15 @@ This Skill implements the **SMART POLE** framework for prompt engineering. It ac
 - **L2**: Geography/Region (Vietnam, EU, Singapore...)
 - **L3**: Legal/Regulatory (GDPR, PCI-DSS...)
 - **L4**: Cultural/Social (Local customs, social norms...)
+
+### Task-Type Classification (NEW)
+Locale becomes **CORE** for consulting/brainstorm tasks:
+
+| Task Type | Locale | When to use |
+|-----------|--------|-------------|
+| Deterministic | Optional | Math, algorithms, bug fixes |
+| Generative | Contextual | Writing, designing |
+| Advisory/Discovery | **CORE** | Consulting, brainstorming, strategy |
 
 ## Example Interaction
 
