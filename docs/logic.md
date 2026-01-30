@@ -8,6 +8,11 @@ The SMART POLE framework is designed to eliminate the "guessing" that AI does wh
 - **Concept**: The persona the AI wears.
 - **Atoms**: "Cynical noir," "Helpful tutor," "Academic paper."
 - **Logic**: Sets the vocabulary and syntactic structure of the *response*.
+- **God-tier (The Persuasion Scalpel)**: Embed Cialdini's Principles:
+  - *Authority*: Cite technical jargon to establish expertise.
+  - *Social Proof*: "10,000 users already pre-ordered."
+  - *Unity*: Use "we" language for tribal belonging.
+- **Persona Specificity**: Not "Be a salesperson" → "Be a **Tech-Evangelist** who is visibly excited."
 
 ### 2. M - Mastery (The User's Level)
 - **Concept**: Who is the user? What is their cognitive load capacity?
@@ -23,6 +28,10 @@ The SMART POLE framework is designed to eliminate the "guessing" that AI does wh
 - **Concept**: What does the AI have to work with?
 - **Atoms**: "Use only the attached PDF," "Budget: $0," "Equipment: One laptop."
 - **Logic**: Prevents the AI from suggesting impossible or irrelevant solutions.
+- **God-tier (The Constraint Clamp)**: Include **Negative Atoms** (what is NOT allowed).
+  - *Positive*: "Budget: $500, Tools: CapCut free."
+  - *Negative*: "**NO** CGI, **NO** paid ads, **NO** professional studio."
+- **Why**: Stops AI from suggesting "pie-in-the-sky" solutions you can't execute.
 
 ### 5. T - Time (The Schedule/Era)
 - **Concept**: When is this happening, or how long should it take?
@@ -53,12 +62,20 @@ The SMART POLE framework is designed to eliminate the "guessing" that AI does wh
     - *General Rule*: Industry > Geo > Cultural > Legal.
     
 - **Logic**: Ensures the advice is not just "technically" correct but "contextually" viable.
+- **God-tier (The Cultural Microscope)**: Drill down to **Sub-cultures** and niche markets.
+  - *Basic*: "Vietnam" → *God-tier*: "Facebook 'Nghiện Setup' community, hate 'lùa gà', value authenticity."
+- **Specialized Language**: Include domain slang (e.g., Gen Z keyboard terms: 'lube', 'mod', 'stab').
 
 ### 9. E - Example (The Anchor)
 - **Concept**: A reference point for the AI to follow.
 - **Insight**: **Snippet Power > Name Dropping**. It is better to provide a concrete 3-line example than to say "Write like Shakespeare."
 - **Atoms**: "Use this JSON schema: {...}", "Structure like this paragraph: [Quote]".
 - **Logic**: Provides a "one-shot" or "few-shot" pattern for the AI to emulate.
+- **God-tier (The DNA Template)**: Provide both **Positive Examples** AND **Anti-Examples**.
+  - *Positive*: "Write like this snippet: [good example]."
+  - *Anti-Example*: "**DO NOT** write like this: [cringe example]. I hate this style."
+- **Why**: AI is excellent at mimicking, but even better at avoiding if you name the enemy.
+
 
 ## The SP-Atom Principle
 A prompt is not a block of text; it is a collection of **Atoms**. 
@@ -91,3 +108,30 @@ The system automatically classifies requests into 5 types:
 | **Compliance** | legal, policy, GDPR, regulation | 🔴 **CORE (2.0)** |
 
 **Threshold**: A prompt is considered "Master/Gemini-Ready" only when it achieves a score of **≥ 67%** AND all required Core categories are confirmed.
+
+## Atom Granularity (v3.0)
+An SP-atom must be **indivisible** and formatted as: `Category: Sub-type - Specific value`.
+
+| ❌ Too vague | ✅ Granular atom |
+|--------------|------------------|
+| "Style is professional" | `Style: Tone - Formal business English` |
+| "Use Reciprocity" | `Style: Persuasion strategy - Reciprocity (cite past favor)` |
+| "For beginners" | `Mastery: Skill level - Complete novice, no prior exposure` |
+
+## Consequence Linking (v3.0)
+When identifying SP-flaws, always state the **technical consequence** if the flaw is left unfilled.
+
+**Template**:
+> ⚠️ **SP-flaw (X)**: [What's missing]. 
+> 🔻 **If unfilled**: [What AI will do wrong / What user will lose].
+
+## Aim vs Outline Distinction (v3.0)
+These two categories are often confused. Here's the clear distinction:
+
+| Aspect | Outline (O) | Aim (A) |
+|--------|-------------|---------|
+| **Nature** | Technical specs | Desired outcome |
+| **Examples** | Word count, sections, format | Convince, inform, comfort |
+| **Metaphor** | The **hard frame** | The **destination** |
+
+*Example*: "Email under 100 words" = Outline. "Email must make boss feel reassured" = Aim.
