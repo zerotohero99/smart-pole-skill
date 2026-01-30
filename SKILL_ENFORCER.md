@@ -27,7 +27,9 @@ This "Enforcer" version of the SMART POLE Skill is designed for **Agentic Workfl
 | **T** | Time | Era, Deadlines, Duration | 0.5 |
 | **P** | People | Audience, Values, Preferences | 1.5 |
 | **O** | Outline | Structure, Scope | **2.0** 🔴 |
-| **L** | Locale | Industry (L1), Region (L2), Legal (L3), Cultural (L4) | 1.5 |
+| **L** | Locale | Industry (L1), Region (L2), Legal (L3), Cultural (L4) | **CONDITIONAL** |
 | **E** | Example | Samples, Reference styles | 0.5 |
 
-**Max Score: 10.5 | Threshold for Master Prompt: ≥ 7.0 (67%)**
+**Locale Conditional Core**: If Aim is domain-sensitive (legal, finance, healthcare, HR, cross-border, culture-sensitive) → Locale becomes 🔴 Core (weight 2.0). Otherwise → 🟡 Contextualizer (weight 1.5).
+
+**Threshold**: ≥ 67% + All Core categories confirmed

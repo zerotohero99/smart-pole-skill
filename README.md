@@ -93,10 +93,11 @@ The Enforcer mode has been upgraded with the following features:
 
 | Feature | Description |
 |---|---|
-| **Weighted Readiness Score** | A 10.5-point scoring system with category weights. Core categories (A, O) = 2.0 points each. The `<master_prompt>` is ONLY generated when score reaches **≥ 7.0/10.5 (67%)**. |
+| **Weighted Readiness Score** | A dynamic scoring system (10.5-11.0 points) with category weights. Core categories (A, O) = 2.0 points each. **Locale becomes Core (2.0) for domain-sensitive requests** (legal, finance, healthcare). |
 | **Iterative Loop** | The AI is **forbidden** from generating a Master Prompt in its first response. It MUST ask clarifying questions first. |
 | **Question Protocol** | All questions are numbered and the user is explicitly asked to answer them before proceeding. No more "assumed" atoms. |
 | **Overlap Handling** | Built-in rules for handling ambiguous information: Functional Gravity Principle + One Atom One Slot. See [Overlap Rules](docs/overlap-rules.md). |
+| **Domain Detection** | Automatic detection of domain-sensitive requests. Warning displayed if Locale is missing for legal/finance/healthcare contexts. |
 | **Security Guardrails** | Built-in defenses against **Prompt Injection** and **Prompt Poisoning** attacks. The AI will detect and reject malicious patterns. |
 
 > [!TIP]
